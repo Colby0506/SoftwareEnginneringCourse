@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form action="/register" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="organization">Select an organization:</label>
+        <select id="organization" name="organization" required>
+            <option value="Organization A">Organization A</option>
+            <option value="Organization B">Organization B</option>
+            <option value="Organization C">Organization C</option>
+            <option value="Organization D">Organization D</option>
+            <option value="Organization E">Organization E</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Result:</h2>
+    {% if is_integer %}
+        <p>The number {{ number }} is {% if is_even %}even{% else %}odd{% endif %}.</p>
+    {% else %}
+        <p>The input "{{ number }}" is not a valid integer.</p>
+    {% endif %}
+    <a href="/">Go back home</a>
+{% endblock %}
